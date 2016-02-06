@@ -42,7 +42,7 @@ $(document).ready(function() {
     var allPanels = $('.smr-res-nav .menu-item-has-children > .sub-menu').hide();
     var allPanels = $('.smr-res-nav .page_item_has_children > .children').hide();
 
-    $('.smr-menu-parent').on('click', function(e) {
+    $('.smr-menu-parent').click(function(e) {
         $(this).toggleClass('fa-angle-up fa-angle-down');
         $(this).parent().find('.sub-menu, .children').slideToggle();
         $(this).parent().toggleClass('smr-menu-parent-activate');
